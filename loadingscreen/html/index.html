@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Apocalypse - Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-container">
+        <!-- Background -->
+        <div class="background"></div>
+        <div class="vignette"></div>
+        
+        <!-- Zombie Animation -->
+        <div class="zombie-container">
+            <div class="zombie" id="zombieModel">🧟</div>
+            <div class="particle" style="--i:1"></div>
+            <div class="particle" style="--i:2"></div>
+            <div class="particle" style="--i:3"></div>
+            <div class="particle" style="--i:4"></div>
+            <div class="particle" style="--i:5"></div>
+        </div>
+        
+        <!-- Text Content -->
+        <div class="content">
+            <h1 class="title" id="title">ZOMBIE APOCALYPSE</h1>
+            <p class="subtitle" id="subtitle">Server is loading...</p>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <p class="progress-text" id="progressText">0%</p>
+        </div>
+        
+        <!-- Music Controller -->
+        <div class="music-controller">
+            <div class="music-info" id="musicInfo">♪ Zombie Apocalypse</div>
+            <div class="music-controls">
+                <button class="music-btn" id="prevMusic" title="Previous Song">⏮</button>
+                <button class="music-btn" id="toggleMusic" title="Play/Pause">▶</button>
+                <button class="music-btn" id="nextMusic" title="Next Song">⏭</button>
+                <input type="range" id="volumeSlider" min="0" max="100" value="60" class="volume-slider" title="Volume">
+            </div>
+        </div>
+        
+        <!-- Tip -->
+        <div class="tip-container">
+            <p class="tip-text" id="tipText">Loading tip will appear here...</p>
+        </div>
+        
+        <!-- Audio Element -->
+        <audio id="loadingAudio" crossorigin="anonymous"></audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
